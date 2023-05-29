@@ -1,0 +1,149 @@
+<div class="ftr glass shadow-lg">
+  <footer class="container-fluid text-center text-lg-start text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+
+
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-10 my-3">
+
+          <div class="rounded-circle d-flex align-items-center justify-content-center mx-auto fade-scroll">
+            <img class="imgint m-auto" src="img/C&MC_ContornoLogo.png" alt="C&MC_Logo blanco contorno" loading="lazy" />
+          </div>
+
+        </div>
+        <!--Grid column-->
+
+
+        <!--Grid column-->
+        <div class="col-lg-7 col-md-10 my-3 d-flex flex-column justify-content-center">
+          <h5 class="text-uppercase fade-scroll">Coffee & Medical Care</h5>
+          <p class="fade-scroll">Tratamientos médico-estéticos de mínima invasión, Especialidades Odontológicas,
+            Psicología, Ginecología y Fisioterapia. El cuidado para tu salud en todas sus formas.</p>
+        </div>
+        <!--Grid column-->
+
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-10 my-3 d-flex flex-column justify-content-center">
+          <h5 class="text-uppercase">redes sociales:</h5>
+
+          <ul class="list-unstyled my-0">
+            <li class="m-2 fade-scroll">
+              <a class="text-white" target="_blank" href="https://www.facebook.com/coffeemedical.care">
+                <i class="fab fa-facebook-square"></i> Facebook
+              </a>
+            </li>
+            <li class="m-2 fade-scroll">
+              <a class="text-white" target="_blank" href="https://www.instagram.com/coffeemedical.care/">
+                <i class="fab fa-instagram"></i> Instagram
+              </a>
+            </li>
+            <li class="m-2 fade-scroll">
+              <a class="text-white" target="_blank" href="https://www.tiktok.com/@magnooliva">
+                <i class="fab fa-tiktok"></i> TikTok
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <hr class="mx-auto my-3">
+
+    <!-- Copyright -->
+    <div id="load" class="text-center p-2 mb-3 fade-scroll">
+      © 2022 Copyright:
+      <a class="text-white" href="/">cnmc.herokuapp.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"></script>
+
+<script src="js/dycalendar.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+  $(function () {
+
+    var documentEl = $(document),
+      fadeElem = $('.fade-scroll'),
+      fadeElemSlid = $('.fade-scroll-slid');
+
+    documentEl.on('scroll', function () {
+      var currScrollPos = documentEl.scrollTop();
+
+      fadeElem.each(function () {
+        var $this = $(this),
+          elemOffsetTop = $this.offset().top;
+        if (currScrollPos > elemOffsetTop - 120) {
+          $this.css('opacity', 0);
+        } else {
+          $this.css('opacity', 1);
+        }
+      });
+
+      fadeElemSlid.each(function () {
+        var $this = $(this),
+          elemOffsetTop = $this.offset().top;
+        if (currScrollPos > elemOffsetTop + 100) {
+          $this.css('opacity', 0);
+        } else {
+          $this.css('opacity', 1);
+        }
+      });
+    });
+
+  });
+</script>
+
+<script>
+  var swiper = new Swiper(".swpprof", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 75,
+      modifier: 2,
+      slideShadows: false,
+    },
+    loop: true
+  });
+</script>
+
+<script>
+  var swiper = new Swiper(".swprest", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 75,
+      modifier: 2,
+      slideShadows: false,
+    },
+    loop: true
+  });
+</script>

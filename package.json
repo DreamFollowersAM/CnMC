@@ -1,0 +1,28 @@
+{
+  "name": "coffee_and_medical_care",
+  "version": "1.0.0",
+  "description": "Tratamientos médico-estéticos de mínima invasión, Especialidades Odontológicas, Psicología, Ginecología y Fisioterapia. El cuidado para tu salud en todas sus formas.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src",
+    "start": "node src"
+  },
+  "keywords": [],
+  "author": "Dream Followers",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-myconnection": "^1.0.4",
+    "express-mysql-session": "^2.1.8",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^6.7.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

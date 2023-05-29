@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZREQ58DTSC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZREQ58DTSC');
+    </script>
+    <%- include("partials/head") %>
+</head>
+
+<body onselectstart="return false" oncut="return false" oncopy="return false" onpaste="return false"
+    ondrag="return false" ondrop="return false">
+    <%- include("partials/navbar") %>
+
+        <section class="hero glass shadow-lg fade-scroll-slid">
+
+            <div class="imagehero fade-scroll">
+                <img src="img/C&MC_Favicon.png" alt="C&MC_Logotipo" />
+            </div>
+
+            <div class="contenthero">
+                <h3 class="fade-scroll">Coffee & <span>Medical Care</span></h3>
+                <p class="fade-scroll mb-5">
+                    El cuidado para salud en todas sus formas, la mejor calidad en el servicio, instalaciones
+                    cautelosamente adecuadas, todo al alcance de ti, consigue por fin tu bienestar.
+                </p>
+                <a href="/services" class="fade-scroll btnrec m-auto">ver servicios</a>
+            </div>
+
+        </section>
+
+        <section class="cntp2">
+            <div class="cntcal">
+
+                <div class="infcal glass fade-scroll-slid">
+                    <h3 class="fade-scroll">Disponibilidad</h3>
+                    <ul class="lstcal fade-scroll">
+                        <li class="green">Alta disponibilidad</li>
+                        <li class="orange">Media disponibilidad</li>
+                        <li class="red">Poca disponibilidad</li>
+                        <li class="gray">Día sin servicio</li>
+                    </ul>
+                    <p class="fade-scroll text-center">Horario de atención: Lunes a viernes de 9:00 a 20:00, Sábados de
+                        9:00 a 13:00</p>
+                </div>
+
+                <div class="cal glass fade-scroll-slid">
+                    <div class="calendar" id="calendar"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="cntp2">
+            <h3 class="fade-scroll">Nuestras ofertas</h3>
+            <div class="slid2 fade-scroll-slid p-5 swiper swprest">
+                <div class="swiper-wrapper">
+
+                    <div class="crd2 glass shadow-lg swiper-slide">
+                        <div class="imgbx2 glass shadow-lg">
+                            <img class="fade-scroll" src="img/news/C&MC_AtencionPsicologica.png" alt="C&MC_AtencionPsicologica">
+                        </div>
+                        <div class="desc2">
+                            <h4 class="fade-scroll">Atención psicológica</h4>
+                        </div>
+                    </div>
+
+                    <div class="crd2 glass shadow-lg swiper-slide">
+                        <div class="imgbx2 glass shadow-lg">
+                            <img class="fade-scroll" src="img/news/C&MC_Blanqueamiento.png" alt="C&MC_Blanqueamiento">
+                        </div>
+                        <div class="desc2">
+                            <h4 class="fade-scroll">Blanqueamiento dental</h4>
+                        </div>
+                    </div>
+
+                    <div class="crd2 glass shadow-lg swiper-slide">
+                        <div class="imgbx2 glass shadow-lg">
+                            <img class="fade-scroll" src="img/news/C&MC_EfectoNefertiti.png" alt="C&MC_EfectoNefertiti">
+                        </div>
+                        <div class="desc2">
+                            <h4 class="fade-scroll">Efecto Nefertiti</h4>
+                        </div>
+                    </div>
+
+                    <div class="crd2 glass shadow-lg swiper-slide">
+                        <div class="imgbx2 glass shadow-lg">
+                            <img class="fade-scroll" src="img/news/C&MC_LiftingFacial.png" alt="C&MC_LiftingFacial">
+                        </div>
+                        <div class="desc2">
+                            <h4 class="fade-scroll">Estiramiento facial</h4>
+                        </div>
+                    </div>
+
+                    <div class="crd2 glass shadow-lg swiper-slide">
+                        <div class="imgbx2 glass shadow-lg">
+                            <img class="fade-scroll" src="img/news/C&MC_Mesoterapia.png" alt="C&MC_Mesoterapia">
+                        </div>
+                        <div class="desc2">
+                            <h4 class="fade-scroll">Mesoterapia</h4>
+                        </div>
+                    </div>
+
+                    <div class="crd2 glass shadow-lg swiper-slide">
+                        <div class="imgbx2 glass shadow-lg">
+                            <img class="fade-scroll" src="img/news/C&MC_PruebasCovid.png" alt="C&MC_PruebasCovid">
+                        </div>
+                        <div class="desc2">
+                            <h4 class="fade-scroll">Pruebas PCR</h4>
+                        </div>
+                    </div>
+
+                    <div class="crd2 glass shadow-lg swiper-slide">
+                        <div class="imgbx2 glass shadow-lg">
+                            <img class="fade-scroll" src="img/news/C&MC_Toxinabotulinica.png" alt="C&MC_Toxinabotulinica">
+                        </div>
+                        <div class="desc2">
+                            <h4 class="fade-scroll">Toxina botulínica</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <%- include("partials/footer") %>
+
+            <script>
+                let calendar = new Calendar('calendar');
+                calendar.getElement().addEventListener('change', e => {
+                    console.log(calendar.value().format('LLL'));
+                });
+            </script>
+</body>
+
+</html>

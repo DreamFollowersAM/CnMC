@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZREQ58DTSC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZREQ58DTSC');
+    </script>
+    <%- include("partials/head") %>
+</head>
+
+<body onselectstart="return false" oncut="return false" oncopy="return false" onpaste="return false"
+    ondrag="return false" ondrop="return false">
+    <%- include("partials/navbar") %>
+
+        <section class="cntp2 mtp">
+            <div class="frmcpt glass shadow-lg fade-scroll-slid">
+                <div class="frm fade-scroll-slid">
+                    <form action="/Send" method="post">
+                        <h3 class="text-center fade-scroll">Contáctanos</h3>
+                        <input class="fade-scroll" type="text" name="name" autocomplete="off" placeholder="Nombre"
+                            required>
+                        <input class="fade-scroll" type="email" name="email" autocomplete="off"
+                            placeholder="Correo electrónico" required>
+                        <input class="fade-scroll" type="tel" name="phone" autocomplete="off" placeholder="Teléfono"
+                            required>
+                        <textarea class="fade-scroll" name="message" cols="30" rows="2" required
+                            placeholder="Mensaje"></textarea>
+                        <button class="btnrec fade-scroll">Enviar</button>
+                    </form>
+                </div>
+                <div class="frmmap shadow-lg fade-scroll-slid">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.8273072550587!2d-101.63451038579706!3d21.07955849141971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bbf17d99736b3%3A0xe29164dbb733ccf9!2sChampagne%20101%2C%20Real%20de%20Jerez%2C%2037538%20Le%C3%B3n%2C%20Gto.!5e0!3m2!1sen!2smx!4v1659315421044!5m2!1sen!2smx"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="lin glass shadow-lg fade-scroll-slid">
+                <h3 class="fade-scroll mb-4">Información de contacto</h3>
+                <div class="sint">
+                    <p class="fade-scroll sintt"><i class="fa-solid fa-location-arrow"></i> Direccion: Champagne 101, Real de Jerez, 37538 León, Gto.</p>
+                    <p class="fade-scroll sintt"><i class="fa-solid fa-phone"></i> Telefono: +52 477 332 7565</p>
+                    <p class="fade-scroll sintt"><i class="fa-solid fa-at"></i> Correo electrónico: coffeemedical.care@gmail.com</p>
+                </div>
+            </div>
+        </section>
+
+        <%- include("partials/footer") %>
+</body>
+
+</html>
